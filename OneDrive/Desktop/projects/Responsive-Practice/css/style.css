@@ -58,6 +58,39 @@ header{
     font-size: 20px;
     margin-bottom: 20px;
 }
+.main{
+    padding: 50px 0px;
+    background-color: black;
+    height: auto;
+    color: white;
+}
+.main h3{
+    font-size: 45px;
+    text-align: center;
+}
+.image-container{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.image-box{
+    max-width: 350px;
+    background-color: #30303030;
+    border: 1px solid #efefef;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 50px;
+}
+.image-box h4{
+    font-size: 24px;
+    margin: 20px 0px;
+}
+.image-box p{
+    font-size: 18px;
+}
+.image-box img{
+    width: 200px;
+}
 
 
 
@@ -65,7 +98,7 @@ header{
 /*  small */
 
 @media screen and (max-width: 576px) {
-    .banner, .main-section{
+    .banner, .main-section, .image-container{
         flex-direction: column;
     }
     .main-section{
@@ -80,6 +113,9 @@ header{
     .profile{
         width: 100%;
     }
+    .image-container{
+        margin: 50px;
+    }
     
 }
 
@@ -93,5 +129,10 @@ header{
     .box-content{
         margin: 20px;
     }
-    
+    .image-container{
+        margin: 50px;
+    }
+    .main-section{
+        margin: 20px;
+    }
 }
