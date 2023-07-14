@@ -68,12 +68,54 @@ span{
     width: 500px;
     height: 550px;
 }
+.main-content{
+    background-color: rgb(42, 146, 42);
+    padding: 50px 0px;
+    height: auto;
+}
+.about{
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.about-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.about-content{
+    max-width: 350px;
+    margin-top: 80px;
+}
+.about-content h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about-content p{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn3{
+    padding: 10px 30px;
+    background-color: brown;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+}
+.about-img{
+    margin-top: 50px;
+}
+
+
+
 
 
 /*  small */
 
 @media screen and (max-width: 576px) {
-    .banner, .menus{
+    .banner, .menus, .about-container{
         flex-direction: column;
     }
     .banner{
@@ -92,6 +134,12 @@ span{
     .content{
         margin: 0px 30px;
     }
+    .about-content{
+        margin: 30px;
+    }
+    img{
+        width: 100%;
+    }
 }
 
 
@@ -101,11 +149,21 @@ span{
     .banner{
         flex-direction: column;
     }
+    img{
+        width: 100%;
+    }
     .banner{
-        margin-left: 150px;
+        margin: 50px;
     }
     .menus{
         margin: 80px;
+    }
+    
+    .about-content{
+        margin-left: 30px;
+    }
+    .about-img{
+        margin-right: 20px;
     }
     .btn{
         margin-bottom: 10px;
