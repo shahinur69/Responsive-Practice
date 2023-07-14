@@ -2,18 +2,52 @@
     margin: 0;
     padding: 0;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
 header{
-    padding: 50px 0px;
     height: auto;
+    background-color:rgb(241, 241, 8);
+    padding-bottom: 50px;
+}
+.menus{
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    padding: 50px 0px;
+} 
+.vertical{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 20px;
+}
+.title{
+    font-size: 26px;
+}
+span{
+    color: red;
+}
+.btn2{
+    padding: 10px 30px;
+    background-color: gray;
+    color: black;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+}
+.menus ul li{
+    list-style: none;
 }
 .banner{
     display: flex;
     justify-content: center;
-    grid-area: 50px;
+    gap: 10px;
 }
 .content{
     max-width: 400px;
-    margin: 20px  0px 0px 100px;
+    margin: 20px  180px 0px 0px;
 }
 .content h2{
     font-size: 55px;
@@ -32,91 +66,32 @@ header{
 }
 .profile{
     width: 500px;
+    height: 550px;
 }
-.main-section{
-    background-color: #56ca56;
-    height: 500px;
-    padding: 50px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    text-align: center;
-}
-.box-content{
-    max-width: 300px;
-    border: 1px solid white ;
-    padding: 20px;
-    border-radius: 10px;
-}
-.box-content h4{
-    font-size: 25px;
-    margin: 10px 0px;
-}
-
-.box-content p{
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-.main{
-    padding: 50px 0px;
-    background-color: black;
-    height: auto;
-    color: white;
-}
-.main h3{
-    font-size: 45px;
-    text-align: center;
-}
-.image-container{
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-}
-.image-box{
-    max-width: 350px;
-    background-color: #30303030;
-    border: 1px solid #efefef;
-    border-radius: 10px;
-    padding: 20px;
-    margin-top: 50px;
-}
-.image-box h4{
-    font-size: 24px;
-    margin: 20px 0px;
-}
-.image-box p{
-    font-size: 18px;
-}
-.image-box img{
-    width: 200px;
-}
-
-
 
 
 /*  small */
 
 @media screen and (max-width: 576px) {
-    .banner, .main-section, .image-container{
+    .banner, .menus{
         flex-direction: column;
     }
-    .main-section{
-        margin-top: 50px;
-        height: 100%;
-        width: 100%;
-        gap: 10px;
+    .banner{
+        margin: 30px;
     }
-    .box-content{
-        margin: 20px;
+    .menus{
+        margin: 50px;
+    }
+    
+    .btn{
+        margin-bottom: 10px;
     }
     .profile{
         width: 100%;
     }
-    .image-container{
-        margin: 50px;
+    .content{
+        margin: 0px 30px;
     }
-    
 }
 
 
@@ -126,13 +101,13 @@ header{
     .banner{
         flex-direction: column;
     }
-    .box-content{
-        margin: 20px;
+    .banner{
+        margin-left: 150px;
     }
-    .image-container{
-        margin: 50px;
+    .menus{
+        margin: 80px;
     }
-    .main-section{
-        margin: 20px;
+    .btn{
+        margin-bottom: 10px;
     }
 }
